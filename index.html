@@ -1,9 +1,106 @@
-<!DOCTYPE html>
+
 <html>
-    <head>
-    
-    </head>
-    <body>
-        Nothing here, yet.
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style-main.css" rel="stylesheet" type="text/css">
+    <title>Jack Dalton</title>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">Jack Dalton<br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio &nbsp;<i class="fa fa-caret-down"><br></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a target="_blank" href="https://github.com/jackdalton">GitHub Account</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href='javascript:$("#projects-modal").modal("show");'>Projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href='javascript:$("#contact-modal").modal("show");'>Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well">
+                        <h2>A Bit About Me
+<br>
+</h2>
+                        <p>Hey! I'm Jack, and this is my website.
+                            <br>
+                            <br>I'm a backend developer living in Colorado.
+                            <br>
+                            <br>I work on several small projects, and a few bigger ones.
+                            <br>
+                            <br>I'm pretty comfortable with PHP, Node.js, MySQL database maintenance, and system administration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projects-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Sorry!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Doing what I do, I actually don't have too many projects to show you. You can, however, check out my <a target="_blank" href="https://github.com/jackdalton">GitHub account</a>, or see some of the other sites I maintain:
+                        <br>
+                        <br>
+                        <a target="_blank" href="http://isup.us">Is it Up? - isup.us</a>
+                        <br>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contact-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Contact Me</h4>
+                </div>
+                <div class="modal-body">
+                    <p>My email address is <a href="mailto:jack@jackdalton.org">jack@jackdalton.org</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
