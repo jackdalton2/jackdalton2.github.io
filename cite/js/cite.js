@@ -27,6 +27,5 @@ function genSite() {
     var dateAcc = getVal("dateAcc") == "" ? "n.d." : getVal("dateAcc");
     if (pageTitle[pageTitle.length - 1] != "." || pageTitle[pageTitle.length - 1] != "?" || pageTitle[pageTitle.length - 1] != "!") pageTitle += ".";
     var out = pageAuthorLast + ", " + pageAuthorFirst + ". " + "\"" + pageTitle + "\"<i> " + siteTitle + "</i>. " + siteSponsor + ", " + datePub + ". Web. " + dateAcc;
-    console.log(out);
     getEl("siteOut").innerHTML = (out == ", . \".\"<i> </i>.n.p., n.d.. Web. n.d.") ? "I don't think that's a real site." : out;
 }
