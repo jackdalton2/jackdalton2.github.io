@@ -1,113 +1,35 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="//cdn.jackdalton.org/files/favicon_primary.ico">
-    <link href="//cdn.jackdalton.org/files/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="//cdn.jackdalton.org/files/css/style-main.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="//cdn.jackdalton.org/files/js/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jackdalton.org/files/js/bootstrap.min.js"></script>
-    <script src="//fast.eager.io/garZK1r9gm.js"></script>
-    <script>
-    !function(j,a,c,k){j.GoogleAnalyticsObject=c;j[c]||(j[c]=function(){ (j[c].q=j[c].q||[]).push(arguments)});j[c].l=+new Date;k=a.createElement('script'); var e=a.scripts[0];k.src='//www.google-analytics.com/analytics.js'; e.parentNode.insertBefore(k,e)}(window,document,'ga');
-    ga('create', 'UA-60102022-5', 'auto'); ga('send', 'pageview');
-    </script>
-    <title>Jack Dalton</title>
-</head>
-
-<body>
-    <div class="navbar navbar-default navbar-inverse navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="">Jack Dalton<br></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio &nbsp;<i class="fa fa-caret-down"><br></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a target="_blank" href="https://github.com/jackdalton">GitHub Account</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href='javascript:$("#projects-modal").modal("show");'>Projects</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href='javascript:$("#contact-modal").modal("show");'>Contact Me</a>
-                    </li>
-                </ul>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <script src="//cdn.jackdalton.org/files/js/jquery.min.js"></script>
+        <script src="//cdn.jackdalton.org/files/js/semantic.min.js"></script>
+        <script src="//cdn.jackdalton.org/files/js/contentswitch.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jackdalton.org/files/css/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jackdalton.org/files/css/jd.org.css">
+        <title>Jack Dalton</title>
+    </head>
+    <body>
+        <div class="ui stackable inverted menu">
+            <div class="ui container">
+                <a href="/" class="header item">
+                    Jack Dalton
+                </a>
+                <a href="javascript:switchPage('about')" class="item">About Me</a>
+                <a href="javascript:switchPage('projects')" class="item">Things I've Worked On</a>
+                <a href="javascript:switchPage('contact')" class="item">Contact Me</a>
             </div>
         </div>
-    </div>
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well">
-                        <h2>A Bit About Me
-<br>
-</h2>
-                        <p>I'm a freelance developer in Colorado.
-                            <br>I'm pretty comfortable with JavaScript, both on the client side and the server side.
-                            <br>Feel free to contact me with any requests or inquiries.</p>
-                    </div>
-                </div>
+        <div class="ui main text container">
+            <h1 class="ui header" id="content-title">About Me</h1>
+            <div id="content-body">
+                <p>
+                    I've been fooling around with programming for a few years now; I tried C++, Python, Java, and some other languages, but I didn't enjoy any of those as much as I did JavaScript.
+                </p>
+                <p>
+                    I started out by making websites for friends, family, and their small businesses. Now I spend my free time reaching out to small businesses around me and offering to redesign their websites.
+                </p>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="projects-modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">My Projects</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Below are some noteworthy projects and websites I've worked on:
-                        <br>
-                        <br>
-                        <a target="_blank" href="http://isup.us">Is it Up? - isup.us</a>
-                        <br>
-                        <br>
-                        <a target="_blank" href="https://github.com/sasha240100/WhitestormJS">WhitestormJS 3D Engine</a>
-                        <br>
-                        <br>
-                        <a target="_blank" href="https://github.com/jackdalton/json-formatter">JSON Formatter</a> <a target="_blank" href="https://goo.gl/cVqaEX">(Store listing)</a>
-                        <br>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="contact-modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Contact Me</h4>
-                </div>
-                <div class="modal-body">
-                    <p>You can contact me at <a href="mailto:jack@jackdalton.org">jack@jackdalton.org</a>.</p>
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
