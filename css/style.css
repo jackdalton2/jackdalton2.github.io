@@ -1,3 +1,39 @@
 body {
     font-family: monospace;
 }
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.left {
+    left: 1%;
+}
+
+.right {
+    right: 1%;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.top {
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width: 375px) {
+    .top {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 315px) {
+    .bottom {
+        font-size: 6px;
+    }
+}
